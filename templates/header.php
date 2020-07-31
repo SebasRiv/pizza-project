@@ -8,7 +8,7 @@ if ($_SERVER['QUERY_STRING'] == 'noname') {
     session_unset();
 }
 
-$name = $_SESSION['name'];
+$name = $_SESSION['name'] ?? 'Guest';
 
 ?>
 
